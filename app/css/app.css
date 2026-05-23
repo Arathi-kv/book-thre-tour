@@ -11765,3 +11765,54 @@ body .dribbble img {
         display: none; /* hide desktop menu on mobile */
     }
 }
+
+
+
+
+
+.whatsapp-chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10001;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.call-button {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10002;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.whatsapp-chat-button img,
+.call-button img {
+  width: 28px;
+  height: 28px;
+}
+
+/* hover */
+.whatsapp-chat-button:hover,
+.call-button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#scroll-top {
+  display: none !important;
+}
