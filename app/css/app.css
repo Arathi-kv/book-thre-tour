@@ -310,7 +310,7 @@
 .main-header .header-lower .fly-ab {
   position: absolute;
   width: auto;
-  right: -8px;
+  left: -8px;
   top: 0;
 }
 
@@ -11708,3 +11708,12 @@ body .dribbble img {
     padding-top:150px;
 }
 
+.fly-ab {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fly-ab.hide {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
