@@ -10109,7 +10109,7 @@ body .dribbble img {
 }
 @media only screen and (max-width: 1570px) {
   .header-lower.is-fixed.is-fixed.is-small {
-    padding-left: 20px;
+    padding-left: 100px;
     padding-right: 20px;
   }
   .has-dashboard .profile-dashboard .favorite-wrap {
