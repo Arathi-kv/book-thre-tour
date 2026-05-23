@@ -11816,3 +11816,9 @@ body .dribbble img {
 #scroll-top {
   display: none !important;
 }
+
+@media (max-width: 768px) {
+  .mb--93 {
+    display: none !important;
+  }
+}
