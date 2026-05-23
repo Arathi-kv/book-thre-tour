@@ -11717,3 +11717,23 @@ body .dribbble img {
   transform: translateY(-10px);
   pointer-events: none;
 }
+
+.header-lower .navigation li a {
+  padding: 10px 15px;
+  transition: padding 0.3s ease;
+}
+
+/* when scrolling */
+.header-lower.scrolled .navigation li a {
+  padding-right: 30px;
+}
+.header-lower .tf-container.full {
+  padding-left: 40px;
+  padding-right: 120px;
+}
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
