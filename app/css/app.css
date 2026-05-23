@@ -11827,52 +11827,84 @@ body .dribbble img {
 
 @media only screen and (max-width:991px){
 
-    .header-inner,
-    .inner-container,
-    .outer-box{
+    /* parent row */
+    .inner-container.flex.justify-space.align-center{
         display:flex !important;
         align-items:center !important;
         justify-content:space-between !important;
         flex-direction:row !important;
     }
 
-    /* Hamburger LEFT */
+    /* mobile wrapper */
+    .header-mobile-wrap{
+        width:100%;
+        display:flex !important;
+        align-items:center !important;
+        justify-content:space-between !important;
+    }
+
+    /* menu button LEFT */
     .mobile-nav-toggler{
-        order:1;
-        margin-right:auto !important;
-        margin-left:0 !important;
+        order:1 !important;
         position:relative !important;
         top:auto !important;
         right:auto !important;
-        font-size:28px;
-        z-index:999;
+        left:auto !important;
+        margin:0 !important;
+        font-size:30px;
+        display:block !important;
     }
 
-    /* Logo RIGHT */
-    .logo-box{
-        order:2;
-        margin-left:auto !important;
-        width:auto !important;
-    }
-
-    .logo-box img{
-        max-width:140px;
-        height:auto;
-        display:block;
-    }
-
-    .nav-outer{
-        display:none;
-    }
-}
-
-
-@media only screen and (max-width:991px){
+ 
 
     .logo-box img{
         max-width:220px !important;
-        width:100%;
-        height:auto;
+        height:auto !important;
+        display:block;
+    }
+
+    /* desktop nav hide */
+    .nav-outer{
+        display:none !important;
+    }
+}
+
+/* logo LEFT */
+.logo-box{
+    order:1 !important;
+    margin-right:auto !important;
+    margin-left:0 !important;
+    width:auto !important;
+}
+
+/* button RIGHT */
+.mobile-nav-toggler{
+    order:2 !important;
+    margin-left:auto !important;
+    margin-right:0 !important;
+    position:relative !important;
+    top:auto !important;
+    right:auto !important;
+    left:auto !important;
+    font-size:30px;
+    display:block !important;
+}
+
+@media only screen and (max-width:991px){
+
+    .header-mobile-wrap{
+        display:flex !important;
+        align-items:center !important;
+        justify-content:space-between !important;
+        gap:20px; /* space between logo and button */
+    }
+
+}
+/* Hide mobile menu button on desktop */
+@media only screen and (min-width:992px){
+
+    .mobile-nav-toggler.mobile-button{
+        display:none !important;
     }
 
 }
