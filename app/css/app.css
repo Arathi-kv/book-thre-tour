@@ -11738,3 +11738,30 @@ body .dribbble img {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+    .inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 16px; /* space from screen edges */
+}
+
+    .logo-box {
+        order: 1;
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .mobile-button {
+        order: 2;
+        display: flex;
+        justify-content: flex-end;
+        flex-shrink: 0;
+    }
+
+    .nav-outer {
+        display: none; /* hide desktop menu on mobile */
+    }
+}
