@@ -271,21 +271,16 @@
 
 })(jQuery);
 
-let lastScrollTop = 0;
 const flyAb = document.querySelector('.fly-ab');
 
 window.addEventListener('scroll', function () {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (!flyAb) return; // safety check
-
-  if (scrollTop > lastScrollTop && scrollTop > 80) {
-    // scroll down → hide
+  if (scrollTop > 50) {
+    // not at top → hide
     flyAb.classList.add('hide');
   } else {
-    // scroll up → show
+    // at top → show
     flyAb.classList.remove('hide');
   }
-
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
